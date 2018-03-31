@@ -1,0 +1,30 @@
+{
+	"name": "fortranbreaker",
+	"displayName": "fortranbreaker",
+	"description": "breakpoint for fortran",
+	"version": "0.0.1",
+	"publisher": "fortranbreaker",
+	"engines": {
+		"vscode": "^1.21.0"
+	},
+	"categories": [
+		"Debuggers"
+	],
+	"extensionDependencies": [
+		"Gimly81.fortran",
+		"ms-vscode.cpptools"
+	],
+	"contributes": {
+		"debuggers": [
+			{
+				"type": "cppdbg",
+				"label": "Fortran (GDB)",
+				"enableBreakpointsFor": {
+					"languageIds": [
+						"fortran"
+					]
+				}
+			}
+		]
+	}
+}

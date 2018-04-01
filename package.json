@@ -1,12 +1,20 @@
 {
 	"name": "fortranbreaker",
-	"displayName": "fortranbreaker",
-	"description": "breakpoint for fortran",
-	"version": "0.0.1",
-	"publisher": "fortranbreaker",
+	"displayName": "Fortran Breakpoint Support",
+	"description": "Add breakpoint support for fortran",
+	"version": "0.0.2",
+	"publisher": "ekibun",
+	"icon": "FortranBreaker_128x.png",
+	"readme": "README.md",
 	"engines": {
 		"vscode": "^1.21.0"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ekibun/FortranBreaker.git"
+	},
+	"homepage": "https://github.com/ekibun/FortranBreaker",
+	"qna": "https://github.com/ekibun/FortranBreaker/issues",
 	"categories": [
 		"Debuggers"
 	],

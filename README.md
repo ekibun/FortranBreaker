@@ -1,6 +1,6 @@
 # Fortran Breakpoint Support 
 
-Add breakpoint support for fortran 
+Add breakpoint support for fortran
 
 ## Features
 

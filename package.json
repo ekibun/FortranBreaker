@@ -2,7 +2,7 @@
 	"name": "fortranbreaker",
 	"displayName": "Fortran Breakpoint Support",
 	"description": "Add breakpoint support for fortran",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "ekibun",
 	"icon": "FortranBreaker_128x.png",
 	"readme": "README.md",

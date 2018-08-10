@@ -53,6 +53,10 @@ Add breakpoint support for fortran
 
 ## Release Notes
 
+### 0.0.3
+
+Enable breakpoints for Fortran - Modern by [letmaik](https://github.com/letmaik)
+
 ### 0.0.2
 
 Add icon and usage

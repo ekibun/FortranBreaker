@@ -29,7 +29,7 @@
 				"label": "Fortran (GDB)",
 				"enableBreakpointsFor": {
 					"languageIds": [
-						"fortran"
+						"fortran", "fortran-modern"
 					]
 				}
 			}

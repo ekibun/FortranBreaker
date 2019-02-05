@@ -2,7 +2,7 @@
 	"name": "fortranbreaker",
 	"displayName": "Fortran Breakpoint Support",
 	"description": "Add breakpoint support for fortran",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "ekibun",
 	"icon": "FortranBreaker_128x.png",
 	"readme": "README.md",
@@ -19,7 +19,6 @@
 		"Debuggers"
 	],
 	"extensionDependencies": [
-		"Gimly81.fortran",
 		"ms-vscode.cpptools"
 	],
 	"contributes": {
@@ -29,7 +28,16 @@
 				"label": "Fortran (GDB)",
 				"enableBreakpointsFor": {
 					"languageIds": [
-						"fortran", "fortran-modern"
+						"fortran", "fortran-modern", "FortranFreeForm", "fortran_fixed-form"
+					]
+				}
+			},
+			{
+				"type": "cppvsdbg",
+				"label": "Fortran (MSVC)",
+				"enableBreakpointsFor": {
+					"languageIds": [
+						"fortran", "fortran-modern", "FortranFreeForm", "fortran_fixed-form"
 					]
 				}
 			}

@@ -1,4 +1,4 @@
-# Fortran Breakpoint Support 
+# Fortran Breakpoint Support
 
 Add breakpoint support for fortran
 
@@ -8,16 +8,15 @@ Add breakpoint support for fortran
 
 ## Requirements
 
-> Gimly81.fortran
-
-> ms-vscode.cpptools
+* `Gimly81.fortran` or `krvajalm.linter-gfortran`
+* `ms-vscode.cpptools`
 
 ## Usage
 
-1. Install MINGW-W64 and all above extensions
-2. Add ```.vscode``` folder
-3. Add ```launch.json```
-```
+* Install MINGW-W64 (or other debugger) and all above extensions
+* Add `.vscode/launch.json` to project.  An example:
+
+```json
 {
     "version": "0.0.1",
     "configurations": [
@@ -33,12 +32,20 @@ Add breakpoint support for fortran
             "cwd": "${workspaceRoot}",
             "externalConsole": true,
             "preLaunchTask": "gfortran"
+        },
+        {
+            "name": "Intel Debug Attach",
+            "type": "cppvsdbg",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
         }
     ]
 }
 ```
-4. Add ```tasks.json```
-```
+
+* Add a build command to `tasks.json`.  An example:
+
+```json
 {
     "version": "0.0.1",
     "command": "gfortran",
@@ -52,6 +59,10 @@ Add breakpoint support for fortran
 ```
 
 ## Release Notes
+
+## 0.0.4
+
+Enable breakpoints for MSVC and support for krvajalm.linter-gfortran by [emanspeaks](https://github.com/emanspeaks)
 
 ### 0.0.3
 
